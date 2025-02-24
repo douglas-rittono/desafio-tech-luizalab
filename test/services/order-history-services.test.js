@@ -33,7 +33,7 @@ describe('processOrderFile', () => {
                 user_id: 70,
                 name: 'Palmer Prosacco',
                 order_id: 753,
-                total: 0,
+                total: 2846.28,
                 date: '2021-03-08',
                 products: [
                     { product_id: 3, value: '1836.74' },

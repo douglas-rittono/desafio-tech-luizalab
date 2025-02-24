@@ -44,7 +44,7 @@ async function groupOrdersByUserId(lines) {
                 value: record.value
             });
 
-            order.total = (parseFloat(order.total) + parseFloat(record.value)).toFixed(2);
+            order.total = parseFloat(order.total) + parseFloat(record.value);
     
             orders.push(order);        
         }else{
@@ -53,8 +53,12 @@ async function groupOrdersByUserId(lines) {
                 value: record.value
             });
 
-            order.total = (parseFloat(order.total) + parseFloat(record.value)).toFixed(2);
+            order.total = parseFloat(order.total) + parseFloat(record.value);
         }              
+    });
+
+    orders.forEach(order => {
+        order.total = parseFloat(order.total.toFixed(2));
     });
 
     return orders;
