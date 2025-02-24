@@ -40,6 +40,7 @@ O OrderID foi considerado único para o desenvolvimento.
     ```sh
     make run-local
     ```
+Atenção o run-local está com comandos para Windows, caso esteja utilizando outro SO, validar as mudanças necessárias.
 
 A aplicação estará disponível em `http://localhost:3000`.
 
@@ -66,3 +67,5 @@ A documentação da API, gerada pelo Swagger, estará disponível em `http://loc
 Para rodar os testes, execute:
 ```sh
 make test-local
+```
+Atenção o run-local está com comandos para Windows, caso esteja utilizando outro SO, validar as mudanças necessárias.
